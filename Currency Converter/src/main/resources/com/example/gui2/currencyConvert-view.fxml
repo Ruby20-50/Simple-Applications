@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea"
+      xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gui2.CurrencyController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <TextField fx:id="amountField" prefWidth="150" promptText="Enter Amount"/>
+   <ComboBox fx:id="sourceCurrencyBox" prefWidth="150.0" visibleRowCount="3" />
+   <ComboBox fx:id="targetCurrencyBox" prefWidth="150.0" />
+
+<!--            absolute unnecessary button!!-->
+<!--          <Button fx:id="convertButton" GridPane.columnIndex="0" onAction="#handleConvert" text="Exchange" />-->
+         <Button onAction="#handleSwap" text="swap currency" />
+
+   <Label fx:id="resultLabel" text="Result: " />
+</VBox>
